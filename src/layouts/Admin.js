@@ -127,11 +127,11 @@ export default function Dashboard(props) {
       <Sidebar
         routes={routes}
         logo={
-          <Stack direction='row' spacing='12px' align='center' justify='center'>
+          <Stack direction='row' spacing='10px' align='center' justify='center'>
             {colorMode === "dark" ? (
               <Image src={LogoDark} style={{ width: '120px', height: 'auto' }} />
             ) : (
-              <Image src={LogoLight} style={{ width: '120px', height: 'auto' }} />
+              <Image src={LogoLight} style={{ width: 'auto', height: '140px' }} />
             )}
 
           </Stack>

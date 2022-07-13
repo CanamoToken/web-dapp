@@ -30,7 +30,7 @@ export function SidebarHelp(props) {
       <Image src={SidebarHelpImage} w='250px' h="auto" />
       <Flex direction='column' textAlign='center'>
         <Text fontSize='14px' color={textColor} fontWeight='bold'>
-          TIPS Wallet
+          Canamo Wallet
         </Text>
         <Text fontSize='12px' color='gray.500'>
           Please check our app.

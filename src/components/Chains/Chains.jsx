@@ -21,16 +21,16 @@ const styles = {
 };
 
 const menuItems = [
+  /* {
+     key: "0x89",
+     value: "Polygon",
+     icon: <PolygonLogo />,
+   },*/
   {
-    key: "0x89",
-    value: "Polygon",
+    key: "0x13881",
+    value: "Mumbai",
     icon: <PolygonLogo />,
-  },
-  /*   {
-      key: "0x13881",
-      value: "Mumbai",
-      icon: <PolygonLogo />,
-    } */
+  }
 ];
 
 function Chains() {
@@ -39,11 +39,12 @@ function Chains() {
   const [selected, setSelected] = useState({});
 
   console.log("chain", chain);
+  console.log("chainId", chainId);
 
   useEffect(() => {
     console.log('chains')
     if (!chainId) return null;
-    const newSelected = menuItems.find((item) => item.key === chainId);
+    const newSelected = menuItems.find((item) => item.key === "0x13881");
     setSelected(newSelected);
     console.log("current chainId: ", chainId);
   }, [chainId]);

@@ -1,7 +1,7 @@
 {
-  "name": "tips",
+  "name": "canamo",
   "version": "0.1.0",
-  "homepage": "https://app.tips.digital/",
+  "homepage": "https://app.canamoglobal.com/",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@chakra-ui/icons": "^1.0.14",

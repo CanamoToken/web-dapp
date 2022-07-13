@@ -86,27 +86,32 @@ function Account() {
                 key={key}
                 onClick={async () => {
                   try {
-                    await authenticate({ provider: connectorId, chainId: '0x89' });
+                    if (connectorId === "walletconnect") {
+                      console.log("hey")
+                      await authenticate({ provider: 'walletconnect', chainId: 0x13881 });
+
+                    }
+                    await authenticate({ provider: connectorId, chainId: 0x13881 });
                     window.localStorage.setItem("connectorId", connectorId);
                     setIsAuthModalVisible(false);
                   } catch (e) {
+                    console.log("account error catch")
                     console.error(e);
                     if (e.code === 4902) {
-
                       try {
                         await web3.currentProvider.request({
                           method: "wallet_addEthereumChain",
                           params: [
                             {
-                              chainId: "0x89",
-                              chainName: "Polygon Mainnet",
-                              rpcUrls: ["https://rpc-mainnet.maticvigil.com/"],
+                              chainId: "0x13881",
+                              chainName: "Polygon Mumbai",
+                              rpcUrls: ["https://rpc-mumbai.maticvigil.com"],
                               nativeCurrency: {
                                 name: "Matic",
                                 symbol: "Matic",
                                 decimals: 18,
                               },
-                              blockExplorerUrls: ["https://explorer-mainnet.maticvigil.com/"],
+                              blockExplorerUrls: ["https://mumbai.polygonscan.com/"],
                               // blockExplorerUrls: ["https://explorer-mumbai.maticvigil.com"],
                             },
                           ],
@@ -118,7 +123,11 @@ function Account() {
                   }
                 }}
               >
-                <img src={icon} alt={title} style={styles.icon} />
+                {title === "Canamo Wallet" ?
+                  <img src={icon} alt={title} /> :
+
+                  <img src={icon} alt={title} style={styles.icon} />
+                }
                 <Text style={{ fontSize: "14px" }}>{title}</Text>
               </div>
             ))}

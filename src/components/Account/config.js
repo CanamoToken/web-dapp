@@ -15,22 +15,22 @@ export const connectors = [
     priority: 1,
   },
   {
-    title: "TIPS Wallet",
+    title: "Canamo Wallet",
     icon: TIPSConnect,
     connectorId: "walletconnect",
-    priority: 2,
+    priority: 999,
   },
   {
     title: "WalletConnect",
     icon: WalletConnect,
     connectorId: "walletconnect",
-    priority: 3,
+    priority: 999,
   },
   {
     title: "Trust Wallet",
     icon: TrustWallet,
     connectorId: "injected",
-    priority: 4,
+    priority: 999,
   },/* 
   {
     title: "MathWallet",

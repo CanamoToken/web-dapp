@@ -159,7 +159,7 @@ export default function Configurator(props) {
                   <Flex justifyContent="center" alignContent="center">
                     <Link
                       isExternal="true"
-                      href="https://twitter.com/tipscorporativo"
+                      href="#"
                     >
                       <Button
                         colorScheme="twitter"

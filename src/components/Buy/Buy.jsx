@@ -112,7 +112,7 @@ function Buy() {
             defaultCrypto={"USDC"}
             isAddressEditable={true}
             defaultAmount={495}
-            redirectURL={"https://tips.digital"}
+            redirectURL={"https://app.canamoglobal.com"}
           />
 
         </div>
