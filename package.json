@@ -46,6 +46,7 @@
     "react-icons": "^4.2.0",
     "react-jvectormap": "0.0.16",
     "react-moralis": "^1.2.1",
+    "react-query": "^4.0.0",
     "react-router": "^5.2.1",
     "react-router-dom": "^5.3.0",
     "react-scripts": "^5.0.0",

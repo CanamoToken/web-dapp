@@ -55,27 +55,43 @@ var dashRoutes = [
     layout: "/admin",
   },
   {
+    name: "PLANTS",
+    category: "Marketplace",
+    rtlName: "صفحات",
+    state: "pageCollapse",
+    views: [
+      {
+        path: "/real-data",
+        name: "Real Time Data",
+        rtlName: "لوحة القيادة",
+        icon: <StarIcon color='inherit' />,
+        component: QuickStart,
+        layout: "/admin",
+      },
+      {
+        path: "/flight-control",
+        name: "Flight Control",
+        rtlName: "لوحة القيادة",
+        icon: <StarIcon color='inherit' />,
+        component: QuickStart,
+        layout: "/admin",
+      }
+    ]
+  },
+  {
     name: "MARKETPLACE",
     category: "Marketplace",
     rtlName: "صفحات",
     state: "pageCollapse",
     views: [
       {
-        path: "/purchase-license",
-        name: "Plants",
+        path: "/marketplace",
+        name: "Marketplace",
         rtlName: "لوحة القيادة",
         icon: <StarIcon color='inherit' />,
         component: QuickStart,
         layout: "/admin",
-      },
-      {
-        path: "/purchase-license",
-        name: "Flowers",
-        rtlName: "لوحة القيادة",
-        icon: <StarIcon color='inherit' />,
-        component: QuickStart,
-        layout: "/admin",
-      },
+      }
     ]
   },
 
@@ -93,14 +109,14 @@ var dashRoutes = [
         component: Buy,
         layout: "/admin",
       },
-      /* {
+      {
         path: "/dex",
         name: "Exchange",
         rtlName: "لوحة القيادة",
         icon: <ExchangeIcon color='inherit' />,
         component: DEX,
         layout: "/admin",
-      }, */
+      },
       {
         path: "/balances",
         name: "Balances",
