@@ -41,6 +41,7 @@ import {
   BuyIcon,
   ExchangeIcon,
   BalanceIcon,
+  DroneIcon,
   BillIcon
 } from "components/Icons/Icons";
 import Buy from 'components/Buy';
@@ -55,8 +56,16 @@ var dashRoutes = [
     layout: "/admin",
   },
   {
+    path: "/marketplace",
+    name: "Marketplace",
+    rtlName: "لوحة القيادة",
+    icon: <StarIcon color='inherit' />,
+    component: QuickStart,
+    layout: "/admin",
+  },
+  {
     name: "PLANTS",
-    category: "Marketplace",
+    category: "plants",
     rtlName: "صفحات",
     state: "pageCollapse",
     views: [
@@ -64,7 +73,7 @@ var dashRoutes = [
         path: "/real-data",
         name: "Real Time Data",
         rtlName: "لوحة القيادة",
-        icon: <StarIcon color='inherit' />,
+        icon: <StatsIcon color='inherit' />,
         component: QuickStart,
         layout: "/admin",
       },
@@ -72,33 +81,15 @@ var dashRoutes = [
         path: "/flight-control",
         name: "Flight Control",
         rtlName: "لوحة القيادة",
-        icon: <StarIcon color='inherit' />,
+        icon: <DroneIcon color='inherit' />,
         component: QuickStart,
         layout: "/admin",
       }
     ]
   },
-  {
-    name: "MARKETPLACE",
-    category: "Marketplace",
-    rtlName: "صفحات",
-    state: "pageCollapse",
-    views: [
-      {
-        path: "/marketplace",
-        name: "Marketplace",
-        rtlName: "لوحة القيادة",
-        icon: <StarIcon color='inherit' />,
-        component: QuickStart,
-        layout: "/admin",
-      }
-    ]
-  },
-
   {
     name: "CRYPTO FUNCTIONS",
     category: "account",
-
     state: "pageCollapse",
     views: [
       {

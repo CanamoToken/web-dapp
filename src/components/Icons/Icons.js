@@ -1,4 +1,5 @@
-import { createIcon } from "@chakra-ui/icons";
+import { createIcon, Icon } from "@chakra-ui/icons";
+import { TbDrone } from 'react-icons/tb'
 import React, { Component } from 'react';
 
 export const AdobexdLogo = createIcon({
@@ -17,6 +18,11 @@ export const AdobexdLogo = createIcon({
     </g>
   ),
 });
+
+export const DroneIcon = () => (
+  <Icon as={TbDrone} />
+)
+
 
 export const BuyIcon = createIcon({
   displayName: "Buy Icon",

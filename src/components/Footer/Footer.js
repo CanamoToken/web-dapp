@@ -27,15 +27,15 @@ export default function Footer(props) {
         <Text as='span'>
           {document.documentElement.dir === "rtl"
             ? " مصنوع من ❤️ بواسطة"
-            : "Robot trading licenses on "}
+            : "Canamo Growing Cannabis"}
         </Text>
         <Link
           color='navy.400'
-          href='https://www.fxwinning.pro/'
+          href='#'
           target='_blank'>
           {document.documentElement.dir === "rtl"
             ? " توقيت الإبداعية"
-            : "FX Winning | Professional Trading "}
+            : " NFT | Internet of Things"}
         </Link>
 
       </Text>
